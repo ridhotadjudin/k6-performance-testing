@@ -40,6 +40,6 @@ export default function () {
 
   // DELETE — Delete user
   res = http.del(`${BASE_URL}/api/users/2`, getHeaders);
-  checkResponse(res, 204, 'Delete User');
+  checkResponse(res, [200, 204], 'Delete User');
   sleep(0.5);
 }

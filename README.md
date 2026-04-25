@@ -124,7 +124,6 @@ k6-performance-testing/
 | `GET`    | `/api/users/2`        | 200             |
 | `POST`   | `/api/users`          | 201             |
 | `PUT`    | `/api/users/2`        | 200             |
-| `DELETE` | `/api/users/2`        | 204             |
 
 ---
 
@@ -235,7 +234,6 @@ If any threshold is violated, k6 exits with a **non-zero exit code**, which fail
      ✓ Get Single User — status is 200
      ✓ Create User — status is 201
      ✓ Update User — status is 200
-     ✓ Delete User — status is 204
 
      checks.........................: 100.00% ✓ 2940  ✗ 0
      http_req_duration..............: avg=245ms  min=120ms  max=890ms  p(90)=380ms  p(95)=450ms

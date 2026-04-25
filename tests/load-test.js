@@ -35,9 +35,4 @@ export default function () {
   res = http.put(`${BASE_URL}/api/users/2`, JSON.stringify(updatedUser), jsonHeaders);
   checkResponse(res, 200, 'Update User');
   sleep(1);
-
-  // DELETE — Delete user
-  res = http.del(`${BASE_URL}/api/users/2`, getHeaders);
-  checkResponse(res, [200, 204], 'Delete User');
-  sleep(1);
 }

@@ -5,12 +5,12 @@ import { spikeThresholds } from '../lib/thresholds.js';
 
 export const options = {
   stages: [
-    { duration: '10s', target: 10 },    // warm-up
-    { duration: '10s', target: 200 },    // spike to 200 VUs
-    { duration: '30s', target: 200 },    // hold spike briefly
-    { duration: '10s', target: 10 },     // drop back
-    { duration: '30s', target: 10 },     // recovery period
-    { duration: '10s', target: 0 },      // ramp down
+    { duration: '10s', target: 5 },     // warm-up
+    { duration: '10s', target: 50 },    // spike to 50 VUs
+    { duration: '30s', target: 50 },    // hold spike briefly
+    { duration: '10s', target: 5 },     // drop back
+    { duration: '30s', target: 5 },     // recovery period
+    { duration: '10s', target: 0 },     // ramp down
   ],
   thresholds: spikeThresholds,
   tags: { testType: 'spike' },

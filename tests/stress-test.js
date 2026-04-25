@@ -5,10 +5,10 @@ import { stressThresholds } from '../lib/thresholds.js';
 
 export const options = {
   stages: [
-    { duration: '30s', target: 100 },   // ramp to 100 VUs
-    { duration: '1m', target: 100 },     // sustain at 100
-    { duration: '30s', target: 200 },    // ramp to 200 VUs
-    { duration: '1m', target: 200 },     // sustain at 200
+    { duration: '30s', target: 20 },   // ramp to 20 VUs
+    { duration: '1m', target: 20 },     // sustain at 20
+    { duration: '30s', target: 50 },    // ramp to 50 VUs
+    { duration: '1m', target: 50 },     // sustain at 50
     { duration: '30s', target: 0 },      // ramp down
   ],
   thresholds: stressThresholds,

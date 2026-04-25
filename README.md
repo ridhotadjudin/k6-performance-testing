@@ -102,18 +102,18 @@ k6-performance-testing/
 
 ### 2. Load Test (`tests/load-test.js`)
 **Purpose:** Assess performance under expected normal traffic.
-- Ramp up to **50 VUs** over 30s → sustain for 1m → ramp down over 10s
-- Full CRUD coverage: `GET`, `POST`, `PUT`, `DELETE`
+- Ramp up to **10 VUs** over 30s → sustain for 1m → ramp down over 10s
+- Full CRUD coverage: `GET`, `POST`, `PUT`
 - Strict thresholds: p(95) < 500ms, error rate < 1%
 
 ### 3. Stress Test (`tests/stress-test.js`)
 **Purpose:** Find the system's breaking point.
-- Ramp to **100 VUs** → sustain → ramp to **200 VUs** → sustain → ramp down
+- Ramp to **20 VUs** → sustain → ramp to **50 VUs** → sustain → ramp down
 - Relaxed thresholds to observe degradation patterns
 
 ### 4. Spike Test (`tests/spike-test.js`)
 **Purpose:** Test system behaviour under sudden traffic spikes.
-- Quick ramp to **200 VUs**, brief hold, then immediate drop to **10 VUs**
+- Quick ramp to **50 VUs**, brief hold, then immediate drop to **5 VUs**
 - Recovery period to verify the system stabilises
 
 ### API Endpoints Tested

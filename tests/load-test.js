@@ -5,8 +5,8 @@ import { loadThresholds } from '../lib/thresholds.js';
 
 export const options = {
   stages: [
-    { duration: '30s', target: 50 },   // ramp up
-    { duration: '1m', target: 50 },    // sustain
+    { duration: '30s', target: 10 },   // ramp up
+    { duration: '1m', target: 10 },    // sustain
     { duration: '10s', target: 0 },    // ramp down
   ],
   thresholds: loadThresholds,

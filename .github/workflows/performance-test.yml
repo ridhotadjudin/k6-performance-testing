@@ -81,7 +81,7 @@ jobs:
           name: load-test-results
           path: results/
   
-summary:
+  summary:
     name: Test Summary
     needs: [smoke-test, load-test]
     if: always()

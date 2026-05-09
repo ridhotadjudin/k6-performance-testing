@@ -3,6 +3,7 @@
 ![k6](https://img.shields.io/badge/k6-7D64FF?style=for-the-badge&logo=k6&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![GitHub Actions](https://img.shields.io/badge/CI%2FCD-GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
 
 ![Performance Tests](https://github.com/ridhotadjudin/k6-performance-testing/actions/workflows/performance-test.yml/badge.svg)
 
@@ -272,6 +273,12 @@ Results are uploaded as artifacts and summarised in the workflow summary.
 
 - 🌐 Website: [ridhotadjudin.id](https://ridhotadjudin.id)
 - 💻 GitHub: [@ridhotadjudin](https://github.com/ridhotadjudin)
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
 
 ---
 
